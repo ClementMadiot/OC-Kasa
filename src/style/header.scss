@@ -1,0 +1,63 @@
+$primary-color: #ff6060;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1240px;
+}
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+}
+.nav-bar li {
+  margin: 0 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+a {
+  color: $primary-color;
+}
+.nav-bar a.active {
+  text-decoration: underline #ff60606b;
+  cursor: default;
+}
+.nav-bar a {
+  text-decoration: none;
+}
+
+/******* MEDIA QUERIES**********/
+
+@media screen and (max-width: 620px) {
+  .Logo-Kasa{
+    width: 145px;
+    height: 46px;
+  }
+  .nav-bar li a{
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 520px) {
+  .nav-bar li a {
+    font-size: 12px;
+  }
+  .nav-bar {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-bar li {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .Logo-Kasa {
+    width: 105px;
+    height: 34px;
+  }
+  .nav-bar li {
+    margin: 0 7px;
+  }
+}

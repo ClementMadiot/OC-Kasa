@@ -1,0 +1,33 @@
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 0;
+  padding: 2rem 0;
+
+}
+
+.title-footer h3 {
+  color: white;
+  margin: 2.5rem 0 1rem;
+}
+
+.img-footer {
+  width: 122px;
+  height: 40px;
+  margin-top: 1.5rem;
+}
+
+/******* MEDIA QUERIES**********/
+
+@media screen and (max-width: 520px) {
+  .title-footer {
+    display: flex;
+    width: 133px;
+  }
+  .title-footer h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+}

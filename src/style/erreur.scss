@@ -1,0 +1,64 @@
+$primary-color: #ff6060;
+$secondary-color: #f6f6f6;
+
+.main-erreur {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 6em;
+}
+
+h2 {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  color: $primary-color;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 260px;
+}
+
+/// IMG ///
+.LogoErreurImg {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+/// LINK ///
+.Return-Home {
+font-size: 18px;
+margin-bottom: 3rem;
+text-align: center;
+min-width: 221px;
+}
+
+/******* MEDIA QUERIES**********/
+
+@media screen and (max-width: 920px) {
+  .LogoErreurImg{
+    width: 500px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .LogoErreurImg{
+    width: 400px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .LogoErreurImg{
+    width: 200px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .Return-Home {
+    font-size: 14px;
+  }
+}
