@@ -1,28 +1,20 @@
 import { Link } from 'react-router-dom'
+import { loftList } from '../datas/loft'
 import '../style/card.scss'
 
-function Card() {
+function Card({ id, cover, title}) {
+
   return (
-    <section className='Containers-Cards'>
-      <div className='Card-Wrapper'>
-        <Link to='/loft' className='Link-Loft'>Titre de la location</Link>
-      </div>
-      <div className='Card-Wrapper'>
-        <Link className='Link-Loft' to='/loft'>Titre de la location</Link>
-      </div>
-      <div className='Card-Wrapper'>
-        <Link className='Link-Loft' to='/loft'>Titre de la location</Link>
-      </div>
-      <div className='Card-Wrapper'>
-        <Link className='Link-Loft' to='/loft'>Titre de la location</Link>
-      </div>
-      <div className='Card-Wrapper'>
-        <Link className='Link-Loft' to='/loft'>Titre de la location</Link>
-      </div>
-      <div className='Card-Wrapper'>
-        <Link className='Link-Loft' to='/loft'>Titre de la location</Link>
-      </div>
-    </section>
+      <li className='list-loft' key={id}>
+        <img className='cover-loft' src={cover} alt="présentation du loft"></img>
+        <Link className='Link-Loft' to='/loft'>{title}</Link>
+      </li>
+
+      /* <ul>
+        {coverLoft.map((loft) => (
+          <li key={loft.id}>{loft.title}</li>
+        ))}
+      </ul> */
   )
 }
 
