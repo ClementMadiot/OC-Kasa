@@ -1,10 +1,10 @@
-import { loftList } from '../datas/loft'
-import Caroussel from '../assets/Carrousel.png'
+// import { loftList } from '../../datas/loft'
+import Caroussel from '../../assets/Carrousel.png'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import '../style/loft.scss'
-import SelectLoft from '../components/select'
+import './loft.scss'
+import SelectLoft from './select'
 
 function Loft() {
 

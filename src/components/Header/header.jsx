@@ -1,5 +1,5 @@
-import logo from '../assets/LOGO Red.jpg'
-import '../style/header.scss'
+import logo from '../../assets/LOGO Red.jpg'
+import './header.scss'
 import { NavLink } from 'react-router-dom'
 
 function Header() {

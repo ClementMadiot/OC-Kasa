@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import '../style/loft.scss'
+import './loft.scss'
 
 function Rating({ scaleValue, careType }) {
   const range = [1, 2, 3, 4, 5]

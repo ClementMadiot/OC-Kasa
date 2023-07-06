@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../style/about.scss'
+import './about.scss'
 
 function About() {
   const [isFlabiliteOpen, setIsFlabiliteOpen] = useState(false)

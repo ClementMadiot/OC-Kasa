@@ -1,7 +1,7 @@
-import '../style/home.scss'
+import './home.scss'
 // import { Link } from 'react-router-dom'
-import Card from '../components/card'
-import { loftList } from '../datas/loft'
+import Card from './card'
+import { loftList } from '../../datas/loft'
 
 function Home() {
   // const coverLoft = loftList.reduce(

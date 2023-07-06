@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import { loftList } from '../datas/loft'
-import '../style/card.scss'
+import './card.scss'
 
 function Card({ id, cover, title}) {
 

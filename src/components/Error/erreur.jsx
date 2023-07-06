@@ -1,6 +1,6 @@
-import LogoErreur from '../assets/404.png'
+import LogoErreur from '../../assets/404.png'
 import { Link } from 'react-router-dom'
-import '../style/erreur.scss'
+import './erreur.scss'
 
 
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './pages/home';
-import Header from './components/header'
-import Error from './components/erreur.jsx'
-import About from './pages/about'
-import Footer from './components/footer'
-import Loft from './pages/loft'
+import Home from './pages/Home/home';
+import About from './pages/About/about';
+import Loft from './pages/Loft/loft';
+import Header from './components/Header/header';
+import Error from './components/Error/erreur';
+import Footer from './components/Footer/footer';
 import { createGlobalStyle } from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'

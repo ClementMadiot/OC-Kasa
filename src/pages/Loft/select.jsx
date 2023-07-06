@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../style/loft.scss'
+import './loft.scss'
 
 function SelectLoft() {
   const [isDescriptioneOpen, setIsFDescriptionOpen] = useState(false)
