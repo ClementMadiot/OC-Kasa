@@ -6,6 +6,10 @@ $secondary-color: #f6f6f6;
   flex-direction: column;
   width: 100%;
 }
+.main-infoLoft {
+  display: flex;
+  justify-content: space-between;
+}
 /// IMAGE ///
 .Caroussel-Container {
   display: flex;
@@ -18,8 +22,6 @@ $secondary-color: #f6f6f6;
 
 ///INFORMATON ///
 .section-infos {
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   width: 100%;
   max-width: 1240px;
@@ -51,6 +53,11 @@ $secondary-color: #f6f6f6;
 }
 
 /// HOST ///
+.section-host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .Host-stuff {
   display: flex;
   margin-top: 1rem;
@@ -70,45 +77,15 @@ $secondary-color: #f6f6f6;
 }
 
 /// ICONS ///
-.star-red {
+.red {
   color: $primary-color;
   width: 36px;
   height: 36px;
 }
-.star-gray {
+.grey {
   color: #e3e3e3;
   width: 36px;
   height: 36px;
-}
-
-/// SELECT ///
-.section-description {
-  display: flex;
-  justify-content: space-between;
-  margin: 25px auto;
-  width: 100%;
-  max-width: 1240px;
-}
-.btn-select {
-  width: 100%;
-  max-width: 580px;
-  margin-right: 1rem;
-}
-.margin {
-  margin-right: 0;
-}
-
-.select-loft {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px 10px 15px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.all-tools li {
-  display: flex;
-  flex-direction: column;
 }
 
 /**************** MEDIA QUERIES*******************/
@@ -119,8 +96,8 @@ $secondary-color: #f6f6f6;
   }
 }
 @media screen and (max-width: 750px) {
-  .star-red,
-  .star-gray {
+  .red,
+  .grey {
     width: 20px;
     height: 20px;
   }
@@ -166,20 +143,5 @@ $secondary-color: #f6f6f6;
     font-size: 12px;
     margin: 0;
     width: 80px;
-  }
-  ///SELECT///
-  .section-description{
-    flex-direction: column;
-    align-items: center
-  }
-  .btn-select{
-    margin: 1rem 0;
-  }
-  .select .text {
-    font-size: 12px;
-    padding: 0
-  }
-  .select .select-content {
-    padding: 1rem;
   }
 }

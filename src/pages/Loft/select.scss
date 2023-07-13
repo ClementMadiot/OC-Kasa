@@ -1,0 +1,50 @@
+$primary-color: #ff6060;
+$secondary-color: #f6f6f6;
+
+.section-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto;
+  width: 100%;
+  max-width: 1240px;
+}
+.btn-select {
+  width: 100%;
+  max-width: 580px;
+  margin-right: 1rem;
+}
+.margin {
+  margin-right: 0;
+}
+
+.select-loft {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.all-tools li {
+  display: flex;
+  flex-direction: column;
+}
+
+/**************** MEDIA QUERIES*******************/
+
+@media screen and (max-width: 520px) {
+  .section-description{
+    flex-direction: column;
+    align-items: center
+  }
+  .btn-select{
+    margin: 1rem 0;
+  }
+  .select .text {
+    font-size: 12px;
+    padding: 0
+  }
+  .select .select-content {
+    padding: 1rem;
+  }
+}

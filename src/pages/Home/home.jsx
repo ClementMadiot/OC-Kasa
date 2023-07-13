@@ -1,24 +1,20 @@
 import './home.scss'
-// import { Link } from 'react-router-dom'
 import Card from './card'
-import { loftList } from '../../datas/loft'
+import { Data } from '../../datas/loft'
 
 function Home() {
-  // const coverLoft = loftList.reduce(
-  //   (setCover, loft) =>
-  //     setCover.includes(loft.cover) ? setCover : setCover.concat(loft.cover),
-  //   []
-  // )
+
   return (
     <section className="main-home">
       <div className="mountain-div">
         <h1 className="title-home">Chez vous, partout et ailleurs</h1>
       </div>
+
       <section className="Containers-Cards">
         <ul className='list-cards'>
-          {loftList.map(({ id, cover, title }) => (
+          {Data.map(({ id, cover, title }) => (
             <div key={id} className="Card-Wrapper">
-              <Card id={id} cover={cover} title={title} />
+              <Card id={`${id}`} cover={cover} title={title} />
             </div>
           ))}
         </ul>
@@ -28,3 +24,18 @@ function Home() {
 }
 
 export default Home
+
+// const [selectedLogement, setSelectedLogement] = useState(null)
+// const filteredList = Data.filter((loft) =>
+// selectedLogement ? loft.id === selectedLogement : true
+// )
+// const handleLogementClick = (filteredList) => {
+//   setSelectedLogement(filteredList[0])
+// }
+
+// console.log(filteredList[0])
+
+// if(filteredList.length > 0) {
+  //   const selectedLogement = filteredList[0];
+  // }
+  // const currentLoft = Data.filter((Data) => Data.id)

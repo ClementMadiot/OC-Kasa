@@ -1,5 +1,7 @@
-$primary-color: #ff6060;
-$secondary-color: #f6f6f6;
+:root{
+  --var-primary-color: #ff6060;
+  --var-secondary-color: #f6f6f6;
+}
 
 * {
   font-family: 'Montserrat';

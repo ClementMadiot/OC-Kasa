@@ -1,12 +1,18 @@
-// import { loftList } from '../../datas/loft'
+import { Data } from '../../datas/loft'
 import Caroussel from '../../assets/Carrousel.png'
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-import './loft.scss'
+import InfoLoft from './infoLoft'
 import SelectLoft from './select'
+import { useParams } from 'react-router-dom'
 
+import './loft.scss'
 function Loft() {
+  const { id } = useParams()
+  const currentLoft = Data.filter((rental) => rental.id === id)
+  const currentTags = currentLoft[0].tags
+  const currentTools = currentLoft[0].equipments
+
+
+  // console.log(currentTags)
 
   return (
     <main>
@@ -18,32 +24,11 @@ function Loft() {
             alt="Maison d'hôte"
           />
         </div>
-        <section className="section-infos">
-          <div className="info-loft">
-            <h1 className="title-loft">Cozy loft on the Canal Saint-Martin</h1>
-            <p className="place-loft">Paris, Île-de-France</p>
-            <div className="all-btn-infos">
-              <button className="btn-info">Cozy</button>
-              <button className="btn-info">Canal</button>
-              <button className="btn-info">Paris 10</button>
-            </div>
-          </div>
 
-          <article className='section-host'>
-            <div className="Host-stuff">
-              <p className="host-name">Alexandre Dumas</p>
-              <div className="host-face"></div>
-            </div>
-            <div className="stars-container">
-              <FontAwesomeIcon className="star-red" icon={faStar} />
-              <FontAwesomeIcon className="star-red" icon={faStar} />
-              <FontAwesomeIcon className="star-red" icon={faStar} />
-              <FontAwesomeIcon className="star-gray" icon={faStar} />
-              <FontAwesomeIcon className="star-gray" icon={faStar} />
-            </div>
-          </article>
+        <section className="section-infos">
+          <InfoLoft loft={currentLoft[0]} tag={currentTags} />
         </section>
-        <SelectLoft/>
+        <SelectLoft loft={currentLoft[0]} tools={currentTools} />
       </section>
     </main>
   )
