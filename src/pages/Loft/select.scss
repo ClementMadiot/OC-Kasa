@@ -16,6 +16,23 @@ $secondary-color: #f6f6f6;
 .margin {
   margin-right: 0;
 }
+.open {
+  height: auto;
+  overflow: hidden;
+}
+.close {
+  height: 0;
+  overflow: hidden;
+  padding: 0!important;
+}
+.select-content {
+  transition: height ease 0.6s;
+}
+
+.content-parent {
+  height: 42px;
+  transition: height ease 0.6s;
+}
 
 .select-loft {
   display: flex;
@@ -33,16 +50,16 @@ $secondary-color: #f6f6f6;
 /**************** MEDIA QUERIES*******************/
 
 @media screen and (max-width: 520px) {
-  .section-description{
+  .section-description {
     flex-direction: column;
-    align-items: center
+    align-items: center;
   }
-  .btn-select{
+  .btn-select {
     margin: 1rem 0;
   }
   .select .text {
     font-size: 12px;
-    padding: 0
+    padding: 0;
   }
   .select .select-content {
     padding: 1rem;

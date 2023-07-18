@@ -11,28 +11,29 @@ function SelectLoft({ loft, tools }) {
   const toggleToolsSelect = () => {
     setIsToolsOpen(!isToolsOpen)
   }
+  
   return (
     <section className="section-description">
       <article className="btn-select">
         <div>
-          <div className={`select ${isDescriptioneOpen ? 'open' : ''}`}>
+          <div className='select'>
             <div className="select-loft" onClick={toggleDescriptionSelect}>
               Description
               <span className="arrow">{isDescriptioneOpen ? '▲' : '▼'}</span>
             </div>
-            {isDescriptioneOpen && (
-              <div className="select-content">
+            
+            <div className={`select-content ${isDescriptioneOpen ? 'open' : 'close'}`}>
                 <p className="text">
                   {loft.description}
                 </p>
               </div>
-            )}
+            
           </div>
         </div>
       </article>
       <article className="btn-select margin">
         <div>
-          <div className={`select ${isToolsOpen ? 'open' : ''}`}>
+          <div className={`select ${isToolsOpen ? 'open' : 'content-parent'}`}>
             <div className="select-loft" onClick={toggleToolsSelect}>
               Équipement
               <span className="arrow">{isToolsOpen ? '▲' : '▼'}</span>

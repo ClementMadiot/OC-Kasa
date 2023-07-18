@@ -12,12 +12,45 @@ $secondary-color: #f6f6f6;
 }
 /// IMAGE ///
 .Caroussel-Container {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+.Slide-Img {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+}
+
+/// IMAGE BTN ///
+
+.svg-inline--fa {
+  color: #ffffff;
+  width: 47px;
+  height: 80px;
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 7%;
+  border: none;
+  transform: translateX(25%);
+  background-color: transparent;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.Caroussel-Desktop {
-  max-width: 1240px;
-  width: 100%;
+.prev-button {
+  left: 0;
+  transform: translateX(0%);
+}
+.next-button {
+  right: 0;
+  transform: translateX(0%);
 }
 
 ///INFORMATON ///
@@ -34,9 +67,12 @@ $secondary-color: #f6f6f6;
 .place-loft {
   color: #ff6060;
 }
-/// Button ///
+/// TAGS ///
 .all-btn-infos {
   display: flex;
+}
+.info-loft ul {
+  padding: 0;
 }
 .btn-info {
   display: flex;
@@ -44,7 +80,7 @@ $secondary-color: #f6f6f6;
   align-items: center;
   width: 115px;
   height: 25px;
-  padding: 1rem;
+  padding: 0 1rem;
   background-color: $primary-color;
   color: $secondary-color;
   margin: 1rem 1rem 1rem 0;
@@ -61,7 +97,7 @@ $secondary-color: #f6f6f6;
 .Host-stuff {
   display: flex;
   margin-top: 1rem;
-  align-items: center
+  align-items: center;
 }
 .host-name {
   font-size: 18px;
@@ -75,8 +111,7 @@ $secondary-color: #f6f6f6;
   background-color: #c4c4c4;
   border-radius: 50px;
 }
-
-/// ICONS ///
+/// Stars ///
 .red {
   color: $primary-color;
   width: 36px;
@@ -105,7 +140,10 @@ $secondary-color: #f6f6f6;
     width: 45px;
     height: 45px;
   }
-
+  .svg-inline--fa {
+    width: 30px;
+    height: 51px;
+  }
 }
 @media screen and (max-width: 620px) {
   .btn-info {
@@ -116,17 +154,21 @@ $secondary-color: #f6f6f6;
   .title-loft {
     font-size: 20px;
   }
+  /// IMAGE ///
+  .Slide-Img{
+    height: 255px;
+  }
 }
-@media screen and (max-width: 520px){
+@media screen and (max-width: 520px) {
   /// TITLE ///
-  .title-loft{
+  .title-loft {
     font-size: 18px;
   }
-  .place-loft{
+  .place-loft {
     font-size: 14px;
   }
   /// HOST ///
-  .section-infos{
+  .section-infos {
     flex-direction: column;
   }
   .section-host {
@@ -135,13 +177,23 @@ $secondary-color: #f6f6f6;
     align-items: center;
     justify-content: space-between;
   }
-  .host-face{
+  .main-infoLoft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .host-face {
     width: 32px;
     height: 32px;
   }
-  .host-name{
+  .host-name {
     font-size: 12px;
     margin: 0;
     width: 80px;
+  }
+  /// BTN SIDE ///
+  .svg-inline--fa {
+    width: 12px;
+    height: 20px;
   }
 }
