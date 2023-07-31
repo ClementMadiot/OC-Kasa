@@ -21,7 +21,8 @@ a {
   color: $primary-color;
 }
 .nav-bar a.active {
-  text-decoration: underline #ff60606b;
+  text-decoration: underline $primary-color;
+  text-decoration-thickness:1.5px ;
   cursor: default;
 }
 .nav-bar a {

@@ -1,0 +1,23 @@
+$primary-color: #ff6060;
+$secondary-color: #f6f6f6;
+
+.red {
+  color: $primary-color;
+  width: 36px;
+  height: 36px;
+}
+.grey {
+  color: #e3e3e3;
+  width: 36px;
+  height: 36px;
+}
+
+/**************** MEDIA QUERIES*******************/
+
+@media screen and (max-width: 750px) {
+  .red,
+  .grey {
+    width: 20px;
+    height: 20px;
+  }
+}

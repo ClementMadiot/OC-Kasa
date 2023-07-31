@@ -1,4 +1,4 @@
-import Stars from './Stars'
+import Stars from '../../components/Stars/stars.jsx'
 import './loft.scss'
 
 function InfoLoft({ loft, tag }) {

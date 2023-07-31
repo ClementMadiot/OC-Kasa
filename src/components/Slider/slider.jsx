@@ -1,7 +1,7 @@
-
-import './loft.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
+import './slider.scss'
+import '../../pages/Loft/loft.scss'
 
 
 

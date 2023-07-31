@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Loft from './pages/Loft/loft';
@@ -34,9 +34,10 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='*' element={<Error />} />
         <Route path='/about' element={<About/>} />
-        <Route path='/loft/:id' element={<Loft/>} />
+        <Route path='/loft/:id' element={<Loft/>}/>
+        <Route path='/404' element={<Error />} />
+        <Route path='*' element={<Navigate to='/404' />} />
       </Routes>
         <Footer />
     </Router>

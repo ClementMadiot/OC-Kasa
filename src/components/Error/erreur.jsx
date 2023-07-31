@@ -1,21 +1,11 @@
 import LogoErreur from '../../assets/404.png'
-import { Link, isRouteErrorResponse, useRouteError } from 'react-router-dom'
-// import { Data } from '../../datas/loft'
-// import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './erreur.scss'
 
 
 
 function Error() {
-  // const { id } = useParams()
-  // const res = Data.filter((rental) => rental.id === id)
-  // console.log(res);
-  // if (res.status === 404) {
-  //   throw new Response("Not Found", { status: 404 });
-  // }
-  // const error = useRouteError();
-  // if(isRouteErrorResponse(error) && error.status === 404){
-
+  
 
     return (
       <section className='main-erreur'>

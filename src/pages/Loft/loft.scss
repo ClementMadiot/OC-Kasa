@@ -10,48 +10,6 @@ $secondary-color: #f6f6f6;
   display: flex;
   justify-content: space-between;
 }
-/// IMAGE ///
-.Caroussel-Container {
-  max-width: 1240px;
-  margin: 0 auto;
-  position: relative;
-  width: 100%;
-}
-.Slide-Img {
-  width: 100%;
-  height: 415px;
-  object-fit: cover;
-}
-
-/// IMAGE BTN ///
-
-.svg-inline--fa {
-  color: #ffffff;
-  width: 47px;
-  height: 80px;
-}
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  width: 7%;
-  border: none;
-  transform: translateX(25%);
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.prev-button {
-  left: 0;
-  transform: translateX(0%);
-}
-.next-button {
-  right: 0;
-  transform: translateX(0%);
-}
 
 ///INFORMATON ///
 .section-infos {
@@ -70,6 +28,7 @@ $secondary-color: #f6f6f6;
 /// TAGS ///
 .all-btn-infos {
   display: flex;
+  flex-wrap: wrap;
 }
 .info-loft ul {
   padding: 0;
@@ -78,7 +37,6 @@ $secondary-color: #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 115px;
   height: 25px;
   padding: 0 1rem;
   background-color: $primary-color;
@@ -86,6 +44,7 @@ $secondary-color: #f6f6f6;
   margin: 1rem 1rem 1rem 0;
   border: 1px solid $primary-color;
   border-radius: 30px;
+  cursor: default;
 }
 
 /// HOST ///
@@ -111,17 +70,6 @@ $secondary-color: #f6f6f6;
   background-color: #c4c4c4;
   border-radius: 50px;
 }
-/// Stars ///
-.red {
-  color: $primary-color;
-  width: 36px;
-  height: 36px;
-}
-.grey {
-  color: #e3e3e3;
-  width: 36px;
-  height: 36px;
-}
 
 /**************** MEDIA QUERIES*******************/
 
@@ -131,32 +79,18 @@ $secondary-color: #f6f6f6;
   }
 }
 @media screen and (max-width: 750px) {
-  .red,
-  .grey {
-    width: 20px;
-    height: 20px;
-  }
   .host-face {
     width: 45px;
     height: 45px;
   }
-  .svg-inline--fa {
-    width: 30px;
-    height: 51px;
-  }
 }
 @media screen and (max-width: 620px) {
   .btn-info {
-    width: 84px;
     height: 18px;
     font-size: 10px;
   }
   .title-loft {
     font-size: 20px;
-  }
-  /// IMAGE ///
-  .Slide-Img{
-    height: 255px;
   }
 }
 @media screen and (max-width: 520px) {
@@ -190,10 +124,5 @@ $secondary-color: #f6f6f6;
     font-size: 12px;
     margin: 0;
     width: 80px;
-  }
-  /// BTN SIDE ///
-  .svg-inline--fa {
-    width: 12px;
-    height: 20px;
   }
 }
