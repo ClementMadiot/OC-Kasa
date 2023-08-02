@@ -13,7 +13,7 @@ function About() {
   return (
     <section className="main-about">
       <div className="mountain-forest"></div>
-      <Collapse title="fiabilité" text={fiabilite} />
+      <Collapse title="Fiabilité" text={fiabilite} />
       <Collapse title="Respect" text={respect} />
       <Collapse title="Service" text={services} />
       <Collapse title="Sécurité" text={security} />

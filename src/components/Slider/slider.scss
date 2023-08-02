@@ -13,7 +13,7 @@
 }
 /// IMAGE BTN ///
 
-.svg-inline--fa {
+button .svg-inline--fa {
   color: #ffffff;
   width: 47px;
   height: 80px;
@@ -44,7 +44,7 @@
 /**************** MEDIA QUERIES*******************/
 
 @media screen and (max-width: 750px){
-  .svg-inline--fa {
+  .Caroussel-Container .svg-inline--fa {
     width: 30px;
     height: 51px;
   }
@@ -56,8 +56,16 @@
   }
 }
 @media screen and (max-width: 520px){
-  .svg-inline--fa {
-    width: 12px;
-    height: 20px;
+  .prev-button{
+    transform: translateX(25%);
+  }
+  .next-button{
+    transform: translateX(-25%);
+  }
+}
+@media screen and (max-width: 420px){
+  .Caroussel-Container .svg-inline--fa {
+    width: 20px;
+    height: 34px;
   }
 }

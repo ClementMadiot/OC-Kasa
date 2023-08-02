@@ -70,7 +70,21 @@ $secondary-color: #f6f6f6;
   background-color: #c4c4c4;
   border-radius: 50px;
 }
-
+/// SELECT ///
+.section-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto;
+  width: 100%;
+  max-width: 1240px;
+}
+.btn-select {
+  width: 100%;
+  max-width: 580px;
+}
+.margin-right {
+  margin-right: 1rem;
+}
 /**************** MEDIA QUERIES*******************/
 
 @media screen and (max-width: 960px) {
@@ -82,6 +96,9 @@ $secondary-color: #f6f6f6;
   .host-face {
     width: 45px;
     height: 45px;
+  }
+  .section-description{
+    margin: 0;
   }
 }
 @media screen and (max-width: 620px) {
@@ -121,8 +138,12 @@ $secondary-color: #f6f6f6;
     height: 32px;
   }
   .host-name {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
     width: 80px;
+  }
+  /// SELECT ///
+  .margin-right{
+    margin-right: 0;
   }
 }
