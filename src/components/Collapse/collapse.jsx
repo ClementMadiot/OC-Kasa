@@ -7,15 +7,14 @@ function Collapse({ title, text }) {
   const [maxHeight, setMaxheight] = useState(null)
   const [isOpen, setIsOpen] = useState(false)
 
-  
+  console.log(maxHeight);
   useEffect(() => {
     function handleResize() {
-      const DOMElementPtr = contentRef.current;
-      
-      if(DOMElementPtr) {
+      const DOMElement = contentRef.current;
+      if(DOMElement) {
         const computeHeight = () => {
-          const {height} = DOMElementPtr.getBoundingClientRect();
-          const { paddingTop, paddingBottom, marginTop, marginBottom } = getComputedStyle(DOMElementPtr)
+          const {height} = DOMElement.getBoundingClientRect();
+          const { paddingTop, paddingBottom, marginTop, marginBottom } = getComputedStyle(DOMElement)
           const heightDeltas = [paddingTop, paddingBottom, marginTop, marginBottom].map(parseFloat);
           const computedHeight = height + heightDeltas.reduce((acc, value) => acc + value, 0)
           return computedHeight
