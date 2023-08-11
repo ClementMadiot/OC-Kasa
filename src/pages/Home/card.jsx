@@ -4,14 +4,14 @@ import './card.scss'
 function Card({ id, cover, title}) {
   
   return (
-  <li className='list-loft' key={id}>
     <Link
     className='Link-Loft'
     to={`/loft/${id}`}>
+    <li className='list-loft' key={id}>
       <img className='cover-loft' src={cover} alt="présentation du loft"></img>
       <p>{title}</p>
+    </li>
     </Link>
-  </li>
   )
 }
 export default Card
