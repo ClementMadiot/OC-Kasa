@@ -7,7 +7,7 @@ function Collapse({ title, text }) {
   const [maxHeight, setMaxheight] = useState(null)
   const [isOpen, setIsOpen] = useState(false)
 
-  // console.log(maxHeight);
+  console.log(maxHeight);
   useEffect(() => {
     function handleResize() {
       const DOMElement = contentRef.current;
