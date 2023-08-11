@@ -40,6 +40,24 @@ button .svg-inline--fa {
   right: 0;
   transform: translateX(0%);
 }
+.no-button {
+  display: none;
+}
+.indicator {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 1rem 0;
+  font-size: large;
+}
+
+
+
 
 /**************** MEDIA QUERIES*******************/
 
@@ -67,5 +85,8 @@ button .svg-inline--fa {
   .Caroussel-Container .svg-inline--fa {
     width: 20px;
     height: 34px;
+  }
+  .indicator{
+    display: none;
   }
 }
