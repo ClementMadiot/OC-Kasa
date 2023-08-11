@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
-import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Loft from './pages/Loft/loft';
-import Header from './components/Header/header';
+import Home from './pages/Home/home';
 import Error from './components/Error/erreur';
+import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
 import { createGlobalStyle } from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -27,7 +27,8 @@ h1 {
 }
 `
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <Router>
       <GlobalStyle />
@@ -42,6 +43,4 @@ ReactDOM.render(
         <Footer />
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
 );
-
