@@ -11,7 +11,7 @@
 - [Technology Used](#tech-stack)
 - [Launch App](#launch-app)
 
-##  <br /> <a name="introduction">Introduction</a>
+##  <br /> <a name="introduction">✨ Introduction</a>
 
 Kasa is a real estate rental web application with React
 - Building dynamic and interactive web applications using React.js and other related technologies.
@@ -19,7 +19,7 @@ Kasa is a real estate rental web application with React
 - Guaranteeing cross-browser compatibility to make my applications accessible on various browsers.
 - Utilizing technologies like MongoDB and Express.js to create functional databases for data storage and retrieval.
 
-##  <br /> <a name="tech-stack">Technology Used</a>
+##  <br /> <a name="tech-stack">🛠 Technology Used</a>
 
 - **React** is a javaScript library for building user interfaces (UIs). Uses a component-based approach where complex UIs are built from smaller, reusable components. Focuses on the view layer (what the user sees) of a web application.
 
@@ -32,7 +32,7 @@ Kasa is a real estate rental web application with React
 - **Styled-component** is a library for styling React components that allows to write CSS directly within your React components using template literals. 
 
 
-##  <br /> <a name="launch-app">Launch App</a>
+##  <br /> <a name="launch-app">🚀 Launch App</a>
 
 <br/>**Cloning the Repository**
 
