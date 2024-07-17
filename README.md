@@ -34,6 +34,24 @@ Kasa is a real estate rental web application with React
 
 ##  <br /> <a name="launch-app">Launch App</a>
 
-- clone the repositery
-- install node_module: npm i or yarn i
-- launch app: npm i or yarn start
+<br/>**Cloning the Repository**
+
+```bash
+git clone {git remote URL}
+```
+
+<br/>**install node_module**
+
+```bash
+npm i
+# or
+yarn i
+```
+
+<br/>**launch the App**
+
+```bash
+npm start
+# or
+yarn start
+```
